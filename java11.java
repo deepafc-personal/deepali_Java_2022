@@ -1,5 +1,6 @@
 package practise;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class java11 {
@@ -162,10 +163,56 @@ public class java11 {
         System.out.println(array.length>=2 && array[0] == array[array.length-1]);
     }
     //76
+    public static void ex76(){
+
+        int[] num_array ={50, -20, 0 , 30,40,60,12};
+        int[] num_array2 = {45, 20, 10, 20, 30, 50, 11};
+
+        if(num_array.length>=2 && num_array2.length>=2){
+            System.out.println(num_array[0] == num_array[0] || num_array[num_array.length -1] == num_array2[num_array2.length - 1]);
+        }else
+        {
+            System.out.println("Array length is less than 2");
+        }
+    }
     //77
+    public static void ex77(){
+        int[] array1 = {50,-20,0};
+        int[] array2 = {5, -50,10};
+
+        System.out.println(" Array1 : " + Arrays.toString(array1));
+        System.out.println(" Array2   : " + Arrays.toString(array2));
+        int[] new_Array = {array1[0] , array2[2]};
+        System.out.println(" New Array  : " + Arrays.toString(new_Array));
+    }
     //78
+    public static void ex78(){
+        int[] array_num = {5,7};
+        System.out.println("Arrya is : " + Arrays.toString(array_num));
+        if(array_num[0] ==4 || array_num[0] ==7){
+            System.out.println("True");
+        }else
+        {
+            System.out.println(array_num[1] ==4  || array_num[1] ==7);
+        }
+
+    }
     //79
+    public static void reversArray(){
+        int[] array_num ={ 20,30,40};
+        System.out.println("Original Array : " + Arrays.toString(array_num));
+        int[] new_array = {array_num[2], array_num[1], array_num[0]};
+        System.out.println("New Array  " + Arrays.toString(new_array));
+    }
     //80
+    public static void ex80(){
+        int[] array = {20,30,40};
+        System.out.println("Original Array   " + Arrays.toString(array));
+        int max_val = array[0];
+        if (array[2] >= max_val)
+            max_val = array[2];
+        System.out.println("Larger value is  + " + max_val);
+    }
     public static void main(String[] args){
        //        practise58();
         //59
@@ -216,10 +263,14 @@ public class java11 {
         //75
         //ex75();
         //76
-        public static void 
+        //ex76();
         //77
+        //ex77();
         //78
+        //ex78();
         //79
+       // reversArray();
         //80
+        //ex80();
     }
 }
